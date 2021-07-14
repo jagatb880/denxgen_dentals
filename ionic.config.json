@@ -1,5 +1,7 @@
 {
   "name": "denxgex",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
