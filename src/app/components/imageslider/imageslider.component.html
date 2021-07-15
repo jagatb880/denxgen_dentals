@@ -1,0 +1,7 @@
+<ion-slides *ngIf="silderImages.length > 0"  spaceBetween="-18" [options]="slideOpts" pager="true" class="image-slider" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" 
+(ionSlideNextEnd)="loadNext()"
+  (ionSlidePrevEnd)="loadPrev()">
+  <ion-slide *ngFor="let silderImage of silderImages">
+    <img class="img-fit" [src]="silderImage"  (click)="ad_details(silderImage)">
+  </ion-slide>
+</ion-slides>
