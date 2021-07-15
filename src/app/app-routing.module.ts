@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'patient-registration',
+    redirectTo: 'patient-dashboard',
     pathMatch: 'full'
   },
   {
@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'patient-registration',
     loadChildren: () => import('./pages/patient-registration/patient-registration.module').then( m => m.PatientRegistrationPageModule)
+  },
+  {
+    path: 'patient-dashboard',
+    loadChildren: () => import('./pages/patient-dashboard/patient-dashboard.module').then( m => m.PatientDashboardPageModule)
   },
 ];
 

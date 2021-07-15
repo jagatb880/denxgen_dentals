@@ -1,0 +1,19 @@
+ion-slides {
+    margin-top: 15px;
+}
+
+ion-slide {
+    padding: 0 20px;
+}
+.swiper-slide img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+ion-slides {
+    --bullet-background: red;
+    --bullet-background-active: rebeccapurple;
+}
